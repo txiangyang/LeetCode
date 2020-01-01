@@ -6,7 +6,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var s = new Solution();
+            // var e136 = s.SingleNumber(new int[] { 4, 2, 1, 3, 2, 3, 1 });
+
+            var e125 = s.IsPalindrome("A man, a plan, a canal: Panama");
+            Console.WriteLine(e125);
         }
     }
 }
