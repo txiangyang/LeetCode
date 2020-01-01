@@ -4,9 +4,9 @@ public partial class Solution
 {
     public bool IsPalindrome(string s)
     {
-        if (s == null || s.Length == 0) return true;
+        if (s == null) return true;
         s = Regex.Replace(s, @"\W", string.Empty, RegexOptions.IgnoreCase).ToLower();
-        if (s == null || s.Length == 0) return true;
+        if (s.Length == 0) return true;
 
         var count = 0;
         while (count < s.Length / 2 + 1)
